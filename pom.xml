@@ -27,7 +27,18 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-
+<distributionManagement>
+      <snapshotRepository>
+        <id>nexus</id>
+        <name>devops markonda</name>
+	<url>http://51.20.184.79:8081/repository/maventonexus/</url>
+      </snapshotRepository>
+      <repository>
+        <id>nexus</id>
+        <name>devops markonda</name>
+	<url>http://51.20.184.79:8081/repository/maventonexus/</url>
+      </repository>	
+   </distributionManagement>
   <build>
     <finalName>test2web</finalName>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
